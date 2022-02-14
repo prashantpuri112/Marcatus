@@ -21,7 +21,7 @@ export const UserSchema = new mongoose.Schema({
     mobile: { type: Number },
     address: { type: String },
     profile: { type: String },
-    // is_admin: {type: Boolean, default: false}
+    is_admin: { type: Boolean, default: false }
 });
 
 export default mongoose.model.Users || mongoose.model('User', UserSchema);
