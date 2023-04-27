@@ -8,6 +8,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { LiveMarketDataProviderContext } from './providers/LiveMarketDataProvider'
 import { ChakraProvider } from '@chakra-ui/react'
 import MainLayout from './layout/Layout'
+import RightShareAdj from './pages/calculator/RightShareAdj'
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: '/today-price',
         element: <TodayPricePage />,
+      },
+      {
+        path: '/right-share-adjustment',
+        element: <RightShareAdj />
       }
     ]
   },
