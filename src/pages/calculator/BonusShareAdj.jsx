@@ -39,7 +39,7 @@ function BonusShareAdj() {
         <Container maxW="container.md">
             <VStack spacing={4} pt={8}>
                 <Heading as="h1">Bonus Share Adjustment Calculator</Heading>
-                <FormControl id="marketPriceBefore">
+                <FormControl id="marketPriceBefore" isRequired>
                     <FormLabel>Market Price (Before Book Closure):</FormLabel>
                     <Input
                         type="text"
@@ -47,7 +47,7 @@ function BonusShareAdj() {
                         onChange={(e) => setMarketPriceBefore(e.target.value)}
                     />
                 </FormControl>
-                <FormControl id="bonusPercentage">
+                <FormControl id="bonusPercentage" isRequired>
                     <FormLabel>% of Bonus Share:</FormLabel>
                     <Input
                         type="text"
