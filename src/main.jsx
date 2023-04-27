@@ -9,6 +9,8 @@ import { LiveMarketDataProviderContext } from './providers/LiveMarketDataProvide
 import { ChakraProvider } from '@chakra-ui/react'
 import MainLayout from './layout/Layout'
 import RightShareAdj from './pages/calculator/RightShareAdj'
+import BonusShareAdj from './pages/calculator/BonusShareAdj'
+import Dividend from './pages/calculator/Dividend'
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: '/right-share-adjustment',
         element: <RightShareAdj />
+      },
+      {
+        path: '/bonus-share-adjustment',
+        element: <BonusShareAdj />
+      },
+      {
+        path: '/dividend-calculator',
+        element: <Dividend />
       }
     ]
   },
