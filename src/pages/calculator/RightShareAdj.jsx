@@ -16,7 +16,7 @@ import {
 function RightShareAdj() {
     const [marketPrice, setMarketPrice] = useState('');
     const [rightSharePercent, setRightSharePercent] = useState('');
-    const [paidUpValue, setPaidUpValue] = useState('10');
+    const [paidUpValue, setPaidUpValue] = useState('100');
     const [result, setResult] = useState(null);
 
     const calculateRightShareAdj = () => {
@@ -66,8 +66,8 @@ function RightShareAdj() {
                         value={paidUpValue}
                         onChange={(e) => setPaidUpValue(e.target.value)}
                     >
-                        <option value="10">10</option>
                         <option value="100">100</option>
+                        <option value="10">10</option>
                     </Select>
                 </FormControl>
                 <Button onClick={calculateRightShareAdj} colorScheme="blue">

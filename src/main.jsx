@@ -11,6 +11,7 @@ import MainLayout from './layout/Layout'
 import RightShareAdj from './pages/calculator/RightShareAdj'
 import BonusShareAdj from './pages/calculator/BonusShareAdj'
 import Dividend from './pages/calculator/Dividend'
+import ShareTransactionCalculator from './pages/calculator/ShareTransactionCalculator'
 
 const router = createBrowserRouter([
   {
@@ -41,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: '/share-transaction-calculator',
         element: <ShareTransactionCalculator />
-      },
+      }
 
     ]
   },
