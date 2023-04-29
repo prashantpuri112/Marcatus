@@ -37,7 +37,12 @@ const router = createBrowserRouter([
       {
         path: '/dividend-calculator',
         element: <Dividend />
-      }
+      },
+      {
+        path: '/share-transaction-calculator',
+        element: <ShareTransactionCalculator />
+      },
+
     ]
   },
 ])
