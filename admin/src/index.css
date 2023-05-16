@@ -1,0 +1,40 @@
+* {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+}
+
+.gap-1 {
+    gap: 1ch
+}
+
+.gap-2 {
+    gap: 2ch
+}
+
+.gap-3 {
+    gap: 3ch
+}
+
+.gap-4 {
+    gap: 4ch
+}
+
+.gap-5 {
+    gap: 5ch
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.main-content {
+    width: calc(100% - 270px);
+    margin-left: 270px;
+}
+
+.title {
+    width: 24ch;
+    white-space: inherit;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

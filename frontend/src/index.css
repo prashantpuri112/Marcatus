@@ -1,0 +1,25 @@
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    transition: 5s all;
+    animation: loading 5s infinite;
+}
+
+.broker-title {
+    white-space: nowrap;
+    width: 15ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.category-slider::-webkit-scrollbar {
+    display: none;
+}
