@@ -4,10 +4,9 @@ import { createContext, useEffect } from "react";
 
 export const LiveMarketDataContext = createContext(null);
 
-
-export const getLiveMarketData = () =>
+export const getLiveMarketData = async () =>
   // axios.get("https://merolagani.com/handlers/webrequesthandler.ashx?type=market_summary")
-axios.get("http://localhost:8080/api/market-summary")
+  axios.get("http://localhost:8080/api/market-summary")
 
 export const LiveMarketDataProviderContext = ({
   children,
